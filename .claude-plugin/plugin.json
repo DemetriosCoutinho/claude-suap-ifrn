@@ -7,6 +7,13 @@
     "email": "demetriosamc@gmail.com"
   },
   "license": "MIT",
-  "homepage": "https://github.com/demetriosamc/claude-suap-ifrn",
-  "keywords": ["suap", "ifrn", "rit", "pit", "automation", "playwright"]
+  "homepage": "https://github.com/DemetriosCoutinho/claude-suap-ifrn",
+  "keywords": [
+    "suap",
+    "ifrn",
+    "rit",
+    "pit",
+    "automation",
+    "playwright"
+  ]
 }
