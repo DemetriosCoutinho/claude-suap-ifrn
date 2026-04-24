@@ -1,0 +1,186 @@
+{
+  "url": "https://suap.ifrn.edu.br/pesquisa/adicionar_etapa/41878/",
+  "formId": "etapa_form",
+  "formAction": "https://suap.ifrn.edu.br/pesquisa/adicionar_etapa/41878/",
+  "fields": [
+    {
+      "name": "csrfmiddlewaretoken",
+      "id": "",
+      "type": "hidden",
+      "tag": "input",
+      "options": null,
+      "value": "37g5BLjbl3gVpEKLNc30YBecrN6oSxadHc5HVpZ66dohXt1mdVj3q5GxfrYFYYqD",
+      "multiple": false
+    },
+    {
+      "name": "ordem",
+      "id": "id_ordem",
+      "type": "number",
+      "tag": "input",
+      "label": "Ordem:",
+      "options": null,
+      "value": "",
+      "multiple": false
+    },
+    {
+      "name": "descricao",
+      "id": "id_descricao",
+      "type": "textarea",
+      "tag": "textarea",
+      "label": "Descrição:",
+      "options": null,
+      "value": ""
+    },
+    {
+      "name": "indicadores_qualitativos",
+      "id": "id_indicadores_qualitativos",
+      "type": "textarea",
+      "tag": "textarea",
+      "label": "Resultados Esperados:",
+      "options": null,
+      "value": ""
+    },
+    {
+      "name": "responsavel",
+      "id": "id_responsavel",
+      "type": "select-one",
+      "tag": "select",
+      "label": "Responsável:",
+      "options": [
+        {
+          "value": "",
+          "text": "---------"
+        },
+        {
+          "value": "38165",
+          "text": "<nome_coordenador>"
+        },
+        {
+          "value": "38190",
+          "text": "Valéria Vitória de Queiroz Freire"
+        },
+        {
+          "value": "38185",
+          "text": "Diego Vinicius Cirilo do Nascimento"
+        },
+        {
+          "value": "38186",
+          "text": "Leo Moreira Silva"
+        },
+        {
+          "value": "38187",
+          "text": "Erasmo Jose Pereira de Oliveira"
+        },
+        {
+          "value": "38188",
+          "text": "Thiago Henrique Freire de Oliveira"
+        },
+        {
+          "value": "38189",
+          "text": "ADRYAN ERYK DE OLIVEIRA LEITE"
+        }
+      ],
+      "value": "",
+      "multiple": false
+    },
+    {
+      "name": "integrantes",
+      "id": "id_integrantes_0",
+      "type": "checkbox",
+      "tag": "input",
+      "label": "Integrantes da Atividade:",
+      "options": null,
+      "value": "38165",
+      "multiple": false
+    },
+    {
+      "name": "integrantes",
+      "id": "id_integrantes_1",
+      "type": "checkbox",
+      "tag": "input",
+      "label": "Valéria Vitória de Queiroz Freire",
+      "options": null,
+      "value": "38190",
+      "multiple": false
+    },
+    {
+      "name": "integrantes",
+      "id": "id_integrantes_2",
+      "type": "checkbox",
+      "tag": "input",
+      "label": "Diego Vinicius Cirilo do Nascimento",
+      "options": null,
+      "value": "38185",
+      "multiple": false
+    },
+    {
+      "name": "integrantes",
+      "id": "id_integrantes_3",
+      "type": "checkbox",
+      "tag": "input",
+      "label": "Leo Moreira Silva",
+      "options": null,
+      "value": "38186",
+      "multiple": false
+    },
+    {
+      "name": "integrantes",
+      "id": "id_integrantes_4",
+      "type": "checkbox",
+      "tag": "input",
+      "label": "Erasmo Jose Pereira de Oliveira",
+      "options": null,
+      "value": "38187",
+      "multiple": false
+    },
+    {
+      "name": "integrantes",
+      "id": "id_integrantes_5",
+      "type": "checkbox",
+      "tag": "input",
+      "label": "Thiago Henrique Freire de Oliveira",
+      "options": null,
+      "value": "38188",
+      "multiple": false
+    },
+    {
+      "name": "integrantes",
+      "id": "id_integrantes_6",
+      "type": "checkbox",
+      "tag": "input",
+      "label": "ADRYAN ERYK DE OLIVEIRA LEITE",
+      "options": null,
+      "value": "38189",
+      "multiple": false
+    },
+    {
+      "name": "inicio_execucao",
+      "id": "id_inicio_execucao",
+      "type": "date",
+      "tag": "input",
+      "label": "Início da Execução:",
+      "options": null,
+      "value": "",
+      "multiple": false
+    },
+    {
+      "name": "fim_execucao",
+      "id": "id_fim_execucao",
+      "type": "date",
+      "tag": "input",
+      "label": "Fim da Execução:",
+      "options": null,
+      "value": "",
+      "multiple": false
+    },
+    {
+      "name": "etapa_form",
+      "id": "",
+      "type": "submit",
+      "tag": "input",
+      "options": null,
+      "value": "Salvar",
+      "multiple": false
+    }
+  ]
+}

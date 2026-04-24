@@ -1,0 +1,46 @@
+{
+  "form_url_base": "https://suap.ifrn.edu.br/pit_rit_v2/preencher_relatorio_individual_trabalho/23602/",
+  "listing_url": "/pit_rit_v2/",
+  "salvar_button": {
+    "text": "Salvar",
+    "selector": "input[type='submit'][value='Salvar']",
+    "type": "input"
+  },
+  "editor_framework": "ckeditor4",
+  "editor_api": "CKEDITOR.instances[id].setData(html)",
+  "total_campos_detectados": 9,
+  "campos": [
+    {"id": "id_obs_aulas", "selector": "#id_obs_aulas", "type": "textarea", "arquivo": "id_arquivo_aulas"},
+    {"id": "id_obs_preparacao_manutencao_ensino", "selector": "#id_obs_preparacao_manutencao_ensino", "type": "textarea", "arquivo": "id_arquivo_preparacao_manutencao_ensino"},
+    {"id": "id_obs_apoio_ensino", "selector": "#id_obs_apoio_ensino", "type": "textarea", "arquivo": "id_arquivo_apoio_ensino"},
+    {"id": "id_obs_programas_projetos_ensino", "selector": "#id_obs_programas_projetos_ensino", "type": "textarea", "arquivo": "id_arquivo_programas_projetos_ensino"},
+    {"id": "id_obs_orientacao_alunos", "selector": "#id_obs_orientacao_alunos", "type": "textarea", "arquivo": "id_arquivo_orientacao_alunos"},
+    {"id": "id_obs_reunioes", "selector": "#id_obs_reunioes", "type": "textarea", "arquivo": "id_arquivo_reunioes"},
+    {"id": "id_obs_pesquisa", "selector": "#id_obs_pesquisa", "type": "textarea", "arquivo": "id_arquivo_pesquisa"},
+    {"id": "id_obs_extensao", "selector": "#id_obs_extensao", "type": "textarea", "arquivo": "id_arquivo_extensao"},
+    {"id": "id_obs_gestao", "selector": "#id_obs_gestao", "type": "textarea", "arquivo": "id_arquivo_gestao"}
+  ],
+  "mapeamento_secao_selector": {
+    "aulas": "#id_obs_aulas",
+    "preparacao_ensino": "#id_obs_preparacao_manutencao_ensino",
+    "apoio_ensino": "#id_obs_apoio_ensino",
+    "projetos_ensino": "#id_obs_programas_projetos_ensino",
+    "atendimento_orientacao": "#id_obs_orientacao_alunos",
+    "reunioes": "#id_obs_reunioes",
+    "pesquisa": "#id_obs_pesquisa",
+    "extensao": "#id_obs_extensao",
+    "gestao": "#id_obs_gestao"
+  },
+  "mapeamento_secao_arquivo": {
+    "aulas": "#id_arquivo_aulas",
+    "preparacao_ensino": "#id_arquivo_preparacao_manutencao_ensino",
+    "apoio_ensino": "#id_arquivo_apoio_ensino",
+    "projetos_ensino": "#id_arquivo_programas_projetos_ensino",
+    "atendimento_orientacao": "#id_arquivo_orientacao_alunos",
+    "reunioes": "#id_arquivo_reunioes",
+    "pesquisa": "#id_arquivo_pesquisa",
+    "extensao": "#id_arquivo_extensao",
+    "gestao": "#id_arquivo_gestao"
+  },
+  "notas": "Gerado pela sessão Playwright MCP de 2026-04-16. Editor: CKEditor 4 (não TinyMCE). Usar CKEDITOR.instances[id].setData(html) para preencher — page.fill() não funciona. Botão Salvar: input[type=submit] com value='Salvar' e class='btn success'. Redirect ao home após save é comportamento normal do SUAP."
+}

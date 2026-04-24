@@ -1,0 +1,71 @@
+{
+  "url": "https://suap.ifrn.edu.br/pesquisa/adicionar_participante_servidor/9139/",
+  "formId": "participacaoservidor_form",
+  "formAction": "https://suap.ifrn.edu.br/pesquisa/adicionar_participante_servidor/9139/",
+  "fields": [
+    {
+      "name": "csrfmiddlewaretoken",
+      "id": "",
+      "type": "hidden",
+      "tag": "input",
+      "options": null,
+      "value": "LLoGcK4dGER6vmRjrLWFhZNi2C0cauVMpQdiwoK8rOZs3b8URucIJtfDQgStgVbc"
+    },
+    {
+      "name": "vinculo",
+      "id": "id_vinculo",
+      "type": "select-one",
+      "tag": "select",
+      "label": "Vínculo:",
+      "options": [
+        {
+          "value": "",
+          "text": "---------"
+        },
+        {
+          "value": "Bolsista",
+          "text": "Bolsista"
+        },
+        {
+          "value": "Voluntário",
+          "text": "Voluntário"
+        }
+      ],
+      "value": ""
+    },
+    {
+      "name": "carga_horaria",
+      "id": "id_carga_horaria",
+      "type": "number",
+      "tag": "input",
+      "label": "Carga Horária:",
+      "options": null,
+      "value": ""
+    },
+    {
+      "name": "servidor",
+      "id": "servidor_zYk34LhDMR",
+      "type": "select-one",
+      "tag": "select",
+      "options": [],
+      "value": ""
+    },
+    {
+      "name": "data",
+      "id": "id_data",
+      "type": "date",
+      "tag": "input",
+      "label": "Data de Entrada:",
+      "options": null,
+      "value": ""
+    },
+    {
+      "name": "participacaoservidor_form",
+      "id": "",
+      "type": "submit",
+      "tag": "input",
+      "options": null,
+      "value": "Salvar"
+    }
+  ]
+}

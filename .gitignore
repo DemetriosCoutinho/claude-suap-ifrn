@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+
+# Playwright
+scripts/**/cookies/
+scripts/**/.auth/
+scripts/suap/.discovery/*.html
+scripts/suap/.discovery/*.md
+*.session
+
+# Snapshots efêmeros
+.playwright-mcp/
+
+# macOS
+.DS_Store
+
+# Dados pessoais — manter fora deste repo
+periodos/
+projeto_pesquisa/
+legado/
+.remember/
+CLAUDE.local.md

@@ -1,0 +1,12 @@
+{
+  "name": "claude-suap-ifrn",
+  "version": "0.1.0",
+  "description": "Skills e scripts para automatizar workflows do SUAP-IFRN (PIT, RIT, cadastro de projetos de pesquisa).",
+  "author": {
+    "name": "Demetrios Coutinho",
+    "email": "demetriosamc@gmail.com"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/demetriosamc/claude-suap-ifrn",
+  "keywords": ["suap", "ifrn", "rit", "pit", "automation", "playwright"]
+}
