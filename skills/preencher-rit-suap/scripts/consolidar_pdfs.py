@@ -24,7 +24,7 @@ except ImportError:
     print("ERRO: pypdf não instalado. Rode: python3 -m pip install pypdf", file=sys.stderr)
     sys.exit(1)
 
-RAIZ = Path(__file__).resolve().parents[4]  # suap-automation/
+PLUGIN_DIR = Path(__file__).resolve().parents[4]  # claude-suap-ifrn/
 
 # Palavras-chave que identificam entradas de eixo 'ensino' que pertencem à seção 'gestao' do SUAP
 # (comissão de elaboração do PPC — portaria da reitoria)
@@ -71,11 +71,14 @@ def main() -> None:
     parser = argparse.ArgumentParser(
         description="Consolida PDFs de evidência por seção SUAP (não por eixo)."
     )
+    parser.add_argument("--data-dir", type=Path, default=Path("."),
+        help="Pasta raiz dos dados SUAP (onde fica periodos/). Default: dir atual.")
     parser.add_argument("--periodo", required=True, help="Semestre AAAA.S (ex.: 2026.1)")
     parser.add_argument("--dry-run", action="store_true", help="Apenas listar, não gravar.")
     args = parser.parse_args()
+    data_dir = args.data_dir.expanduser().resolve()
 
-    base = RAIZ / "periodos" / args.periodo / "rit"
+    base = data_dir / "periodos" / args.periodo / "rit"
     manifesto_path = base / "_meta" / "manifesto.json"
 
     if not manifesto_path.exists():
@@ -124,7 +127,7 @@ def main() -> None:
             print(f"  + {p.relative_to(base)}")
 
         if args.dry_run:
-            print(f"  → (dry-run) gravaria {saida.relative_to(RAIZ)}")
+            print(f"  → (dry-run) gravaria {saida.relative_to(data_dir)}")
             continue
 
         if len(pdfs) == 1:
@@ -137,7 +140,7 @@ def main() -> None:
             with open(saida, "wb") as f:
                 writer.write(f)
 
-        print(f"  → {saida.relative_to(RAIZ)}")
+        print(f"  → {saida.relative_to(data_dir)}")
 
 
 if __name__ == "__main__":

@@ -46,8 +46,8 @@ async function buscarPessoa(selectName, termoBusca) {
 ```
 
 Uso:
-- Servidor: `await buscarPessoa('servidor', '1935729')` — SIAPE numérico.
-- Aluno: `await buscarPessoa('aluno', '07508142450')` — CPF sem pontuação (11 dígitos).
+- Servidor: `await buscarPessoa('servidor', '<SIAPE>')` — SIAPE numérico.
+- Aluno: `await buscarPessoa('aluno', '<CPF_SEM_PONTUACAO>')` — CPF sem pontuação (11 dígitos).
 
 ## Setar o Select2 após busca bem-sucedida
 

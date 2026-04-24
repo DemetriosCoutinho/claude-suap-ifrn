@@ -10,6 +10,7 @@ description: >
   MCP, preenche os 9 CKEditors com HTML formatado, anexa os PDFs e salva como rascunho
   (nunca clica em "Enviar ao Diretor"). NÃO usar para PIT. NÃO substitui a fase de
   redação — exige as 9 redações já aprovadas em periodos/<periodo>/rit/_redacao/.
+allowed-tools: Read, Write, Edit, Bash, Glob, Grep
 ---
 
 # preencher-rit-suap

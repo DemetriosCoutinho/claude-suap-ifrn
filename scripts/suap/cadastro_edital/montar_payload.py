@@ -65,7 +65,7 @@ def extract_plain_text(md_value: str) -> str:
 # Mapeamento: nome do MD → (name do campo SUAP, tipo de preenchimento)
 # tipos: text | date | select | select-autocomplete | checkbox-termo | ckeditor | skip
 FIELDS = {
-    "01-campus.md": ("uo", "select-autocomplete", None)  # preencher via AskUserQuestion,
+    "01-campus.md": ("uo", "select-autocomplete", None),  # preencher via AskUserQuestion
     "02-titulo.md": ("titulo", "text", None),
     "03-valor-global.md": ("valor_global_projeto", "text", None),
     "04-inicio-execucao.md": ("inicio_execucao", "date", None),

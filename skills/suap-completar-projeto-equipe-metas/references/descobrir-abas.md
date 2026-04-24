@@ -70,7 +70,7 @@ Executar via `browser_evaluate` após navegar para cada aba:
    - Incrementar `TOTAL_FORMS` (Django valida esse sentinel).
    - Popular campos da nova linha com `setNative` (Receita 1 da skill-pai).
 
-2. **Select2 AJAX para pessoa**: campo `equipe_set-N-pessoa` é `<select>` vazio populado por AJAX. Usar Receita 3 (skill-pai) buscando por CPF (`"069.084.294-58"` com pontuação; se falhar, sem pontuação `"06908429458"`) ou nome parcial.
+2. **Select2 AJAX para pessoa**: campo `equipe_set-N-pessoa` é `<select>` vazio populado por AJAX. Usar Receita 3 (skill-pai) buscando por CPF (`"<CPF_COM_PONTUACAO>"` com pontuação; se falhar, sem pontuação `"<CPF_SEM_PONTUACAO>"`) ou nome parcial.
 
 3. **Aba Metas pode abrir modal**: em alguns templates SUAP, "Adicionar meta" abre um modal separado que POSTa via AJAX. Nesse caso:
    - Não é inline formset — é um endpoint `/pesquisa/adicionar_meta/{projeto_id}/`.

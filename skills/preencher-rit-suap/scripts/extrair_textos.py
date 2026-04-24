@@ -15,7 +15,7 @@ import sys
 from datetime import date
 from pathlib import Path
 
-RAIZ = Path(__file__).resolve().parents[4]  # suap-automation/
+PLUGIN_DIR = Path(__file__).resolve().parents[4]  # claude-suap-ifrn/
 
 SECOES = [
     ("aulas",                  "01_aulas.md"),
@@ -72,10 +72,13 @@ def main() -> None:
     parser = argparse.ArgumentParser(
         description="Extrai textos dos MDs aprovados para .textos_prontos.json"
     )
+    parser.add_argument("--data-dir", type=Path, default=Path("."),
+        help="Pasta raiz dos dados SUAP (onde fica periodos/). Default: dir atual.")
     parser.add_argument("--periodo", required=True, help="Semestre AAAA.S (ex.: 2026.1)")
     args = parser.parse_args()
+    data_dir = args.data_dir.expanduser().resolve()
 
-    base = RAIZ / "periodos" / args.periodo / "rit" / "_redacao"
+    base = data_dir / "periodos" / args.periodo / "rit" / "_redacao"
     if not base.exists():
         print(f"ERRO: Diretório não encontrado: {base}", file=sys.stderr)
         sys.exit(1)
@@ -86,7 +89,7 @@ def main() -> None:
     for secao, filename in SECOES:
         path = base / filename
         if not path.exists():
-            erros.append(f"  Arquivo não encontrado: {path.relative_to(RAIZ)}")
+            erros.append(f"  Arquivo não encontrado: {path.relative_to(data_dir)}")
             continue
 
         meta, body = parse_md(path)
@@ -105,7 +108,7 @@ def main() -> None:
 
         texto = extrair_corpo(body)
         secoes[secao] = {
-            "arquivo": str(path.relative_to(RAIZ)),
+            "arquivo": str(path.relative_to(data_dir)),
             "chars": len(texto),
             "texto": texto,
         }
@@ -117,7 +120,7 @@ def main() -> None:
         print("\nResolva antes de preencher o formulário SUAP.", file=sys.stderr)
         sys.exit(1)
 
-    saida_dir = RAIZ / "periodos" / args.periodo / "rit" / "_submissao"
+    saida_dir = data_dir / "periodos" / args.periodo / "rit" / "_submissao"
     saida_dir.mkdir(parents=True, exist_ok=True)
     saida = saida_dir / ".textos_prontos.json"
 
@@ -128,7 +131,7 @@ def main() -> None:
     }
 
     saida.write_text(json.dumps(resultado, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"Textos prontos: {saida.relative_to(RAIZ)}")
+    print(f"Textos prontos: {saida.relative_to(data_dir)}")
     for secao, dados in secoes.items():
         print(f"  [{secao}] {dados['chars']} chars")
 
