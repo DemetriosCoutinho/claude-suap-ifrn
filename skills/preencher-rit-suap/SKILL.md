@@ -42,6 +42,16 @@ com input escondido — para que o próximo semestre não precise redescobrir tu
 
 ## Fluxo em 7 passos — executar em ordem
 
+### Passo 0 — Bootstrap de dependências (idempotente)
+
+Antes de qualquer outro passo, verificar e instalar dependências:
+
+```bash
+bash <PLUGIN_DIR>/scripts/bootstrap_deps.sh
+```
+
+`<PLUGIN_DIR>` é a raiz do plugin instalado. Se `${CLAUDE_PLUGIN_ROOT}` estiver definido no ambiente, use-o. Caso contrário, perguntar via `AskUserQuestion`: "Qual o caminho de instalação do plugin claude-suap-ifrn? (ex.: ~/Projects/claude-suap-ifrn)". O script é no-op silencioso se `pypdf`, `playwright` e `keyring` já estiverem importáveis.
+
 ### Passo 1 — Ler schema do formulário
 
 ```python

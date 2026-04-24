@@ -59,6 +59,16 @@ Fase 4  Preenchimento + Salvar rascunho (para aqui)
 Fase 5  Pós-salvamento — PRÓXIMA SKILL (não executar agora)
 ```
 
+### Passo 0 — Bootstrap de dependências Python (idempotente)
+
+Antes de qualquer outro passo, verificar e instalar dependências:
+
+```bash
+bash <PLUGIN_DIR>/scripts/bootstrap_deps.sh
+```
+
+`<PLUGIN_DIR>` é a raiz do plugin instalado. Se `${CLAUDE_PLUGIN_ROOT}` estiver definido no ambiente, use-o. Caso contrário, perguntar via `AskUserQuestion`: "Qual o caminho de instalação do plugin claude-suap-ifrn? (ex.: ~/Projects/claude-suap-ifrn)". O script é no-op silencioso se `pypdf`, `playwright` e `keyring` já estiverem importáveis.
+
 ### Fase 0 — Bootstrap
 
 1. Derivar `slug = "edital-<NN>-<YYYY>"` a partir de `edital="NN/YYYY"`.
