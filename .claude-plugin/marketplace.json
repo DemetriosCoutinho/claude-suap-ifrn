@@ -1,0 +1,11 @@
+{
+  "name": "claude-suap-ifrn-local",
+  "owner": { "name": "demetriosamc" },
+  "plugins": [
+    {
+      "name": "claude-suap-ifrn",
+      "source": "./",
+      "description": "Skills e scripts para automatizar workflows do SUAP-IFRN (PIT, RIT, cadastro de projetos de pesquisa)."
+    }
+  ]
+}
