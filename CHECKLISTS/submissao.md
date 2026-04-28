@@ -51,7 +51,7 @@
 
 - [ ] Comprovante de submissão (tela, e-mail, protocolo) capturado e salvo em `_meta/evidencias/`.
 - [ ] Manifesto atualizado: `status: "submetido"` + campo `submissao` preenchido com `data`, `evidencia` (path) e `aprovador_humano`.
-- [ ] Commit do estado final: `git add -A && git commit -m "RIT AAAA.S submetido — [data]"`.
+- [ ] Arquivamento manual do pacote de evidências (a pasta `periodos/` é gitignored — não commitar).
 
 ---
 

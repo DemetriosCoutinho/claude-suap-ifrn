@@ -29,12 +29,14 @@
 
 ## Coleta no webmail (`https://webmail.ifrn.edu.br`)
 
+> **Fora do escopo automatizado do plugin** — coleta manual pelo usuário.
+> Não existe `scripts/webmail/` neste repo; itens abaixo são feitos manualmente.
+
 - [ ] Login realizado (autenticação manual — não salvar senha em arquivo).
 - [ ] Pesquisado por e-mails com assunto/remetente relacionado ao período-alvo.
 - [ ] Verificados anexos nas pastas: Entrada, Enviados, e qualquer subpasta de trabalho.
 - [ ] Cada anexo relevante: baixado e salvo na subpasta correta do eixo.
 - [ ] Cada item registrado no manifesto: campo `origem: "webmail"` + data do e-mail + remetente.
-- [ ] Script de coleta criado/atualizado em `scripts/webmail/` para reutilização futura.
 
 ---
 
