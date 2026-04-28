@@ -17,6 +17,9 @@ scripts/suap/.discovery/*.md
 # macOS
 .DS_Store
 
+# Configuração local do Claude Code (paths absolutos do usuário)
+.claude/settings.local.json
+
 # Dados pessoais — manter fora deste repo
 periodos/
 projeto_pesquisa/

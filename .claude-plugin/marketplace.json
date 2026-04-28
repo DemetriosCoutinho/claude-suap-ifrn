@@ -1,6 +1,10 @@
 {
   "name": "claude-suap-ifrn-local",
-  "owner": { "name": "demetriosamc" },
+  "owner": {
+    "name": "DemetriosCoutinho",
+    "email": "demetriosamc@gmail.com",
+    "url": "https://github.com/DemetriosCoutinho"
+  },
   "plugins": [
     {
       "name": "claude-suap-ifrn",
