@@ -72,8 +72,8 @@ Base da **Fase 4** do pipeline. Para cada tipo de documento, define o que torna 
 - [ ] Número da portaria e data de emissão são legíveis.
 
 **Sinais de alerta**:
-- Portaria de 2021 usada em 2025 sem confirmação de que ainda está vigente → verificar com coordenação.
-- Portaria de curso errado (há portaria de ADS e de Informática nas pastas históricas).
+- Portaria de período antigo usada em período atual sem confirmação de vigência → verificar com coordenação.
+- Portaria de curso ao qual o usuário não está vinculado.
 
 ---
 
@@ -86,7 +86,7 @@ Base da **Fase 4** do pipeline. Para cada tipo de documento, define o que torna 
 **Critérios de validade**:
 - [ ] Data da reunião está dentro do período-alvo.
 - [ ] Nome do usuário consta como presente (assinatura, lista de presença, ou menção).
-- [ ] Identifica o curso e a instância (colegiado de ADS, colegiado de Informática, etc.).
+- [ ] Identifica o curso e a instância (colegiado do curso correspondente).
 
 **Sinais de alerta**:
 - Ata de colegiado de curso ao qual o usuário não está vinculado → esclarecer antes de incluir.
@@ -96,7 +96,7 @@ Base da **Fase 4** do pipeline. Para cada tipo de documento, define o que torna 
 
 ## 6. PAF
 
-**O que é**: `[confirmar com usuário]` — comprovante que aparece nas pastas de gestão 2024 e 2025. Significado e exigência a confirmar.
+**O que é**: `[confirmar com usuário]` — sigla encontrada em alguns comprovantes de gestão. Significado e exigência variam conforme contexto institucional.
 
 **Origem típica**: SUAP ou e-mail. `[confirmar]`
 

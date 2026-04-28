@@ -1,18 +1,16 @@
 # Welcome to SUAP-IFRN Automation
 
-## How We Use Claude
+## Sobre este plugin
 
-Based on Demetrios Coutinho's usage over the last 30 days:
+O `claude-suap-ifrn` automatiza dois fluxos do SUAP-IFRN com revisão humana obrigatória:
 
-Work Type Breakdown:
-  Build Feature  ████████████████░░░░  80%
-  Plan Design    ████░░░░░░░░░░░░░░░░  20%
+- **Preenchimento do RIT** (`/preencher-rit-suap`) — 9 seções narrativas + PDFs.
+- **Cadastro de projeto de pesquisa** (`/suap-cadastrar-projeto-edital` +
+  `/suap-completar-projeto-equipe-metas`) — formulário PROPI + equipe + metas.
 
-Top Skills & Commands:
-  `/preencher-rit-suap` · `/suap-cadastrar-projeto-edital` · `/suap-completar-projeto-equipe-metas`
+Toda submissão final é manual: o plugin para em "Salvar rascunho".
 
-Top MCP Servers:
-  Playwright — automação de formulários SUAP via browser headless.
+**MCP usado:** Playwright — automação de formulários SUAP via browser headless.
 
 ## Your Setup Checklist
 

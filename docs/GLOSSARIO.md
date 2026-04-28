@@ -56,8 +56,8 @@ Documento oficial que nomeia membros do Núcleo Docente Estruturante (NDE) de um
 **PPC** (Projeto Pedagógico de Curso)
 Documento institucional do curso. Participação em comissão de elaboração ou revisão de PPC gera comprovante para o eixo ensino.
 
-**PAF** `[confirmar: o que significa este acrônimo no contexto do usuário?]`
-Comprovante que aparece nas pastas de gestão em 2024 e 2025. Necessita confirmação do tipo e exigência.
+**PAF** `[confirmar significado institucional no IFRN]`
+Sigla institucional encontrada em comprovantes de eixo gestão. Significado e exigência variam conforme campus/curso — confirmar com a coordenação local antes de incluir como obrigação.
 
 **Ata de colegiado**
 Registro oficial de reunião de colegiado de curso. Comprova participação no eixo gestão.
@@ -71,11 +71,8 @@ Documento que comprova orientação de TCC, estágio ou IC: termo de orientaçã
 **Banca**
 Participação como membro avaliador em banca de TCC ou IC. Gera comprovante para eixo orientações.
 
-**FINECAP** `[confirmar: nome completo e natureza — projeto de pesquisa? extensão?]`
-Aparece em RIT2024.1 e RIT2024.2. Necessita confirmação.
-
-**CODIPA** `[confirmar: sigla e papel nos comprovantes — coordenadoria? projeto?]`
-Aparece em RIT2021.1. Necessita confirmação.
+**CODIPA** `[confirmar significado institucional no IFRN]`
+Sigla institucional encontrada em comprovantes de eixo gestão. Confirmar com a coordenação local antes de incluir como obrigação.
 
 ---
 
