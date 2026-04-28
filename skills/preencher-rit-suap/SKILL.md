@@ -32,7 +32,9 @@ com input escondido — para que o próximo semestre não precise redescobrir tu
 3. `scripts/suap/.discovery/rit_form_schema.json` presente (cristalizado em 2026-04-16; válido enquanto o SUAP não mudar layout).
 4. `pypdf` instalado: `python3 -m pip install pypdf`.
 
-## Inputs obrigatórios — pedir ao usuário no início
+## Inputs obrigatórios — coletar via `AskUserQuestion` no início
+
+Se qualquer um dos inputs abaixo estiver ausente, perguntar via `AskUserQuestion` antes de qualquer outra ação.
 
 - **`pasta_dados`** — pasta base onde ficam seus dados SUAP (ex.: `~/Documents/meus-dados-suap/`)
 - **`periodo`** — formato `AAAA.S` (ex.: `2026.1`)
@@ -66,7 +68,7 @@ btn    = schema["salvar_button"]["selector"]   # "input[type='submit'][value='Sa
 ### Passo 2 — Extrair textos dos MDs
 
 ```bash
-python3 .claude/skills/preencher-rit-suap/scripts/extrair_textos.py --periodo <P>
+python3 <PLUGIN_DIR>/skills/preencher-rit-suap/scripts/extrair_textos.py --periodo <P>
 ```
 
 Gera `<pasta_dados>/periodos/<P>/rit/_submissao/.textos_prontos.json`. Se abortar com erro de `status: rascunho`, pare e avise o usuário antes de tocar no navegador.
@@ -74,7 +76,7 @@ Gera `<pasta_dados>/periodos/<P>/rit/_submissao/.textos_prontos.json`. Se aborta
 ### Passo 3 — Consolidar PDFs por seção
 
 ```bash
-python3 .claude/skills/preencher-rit-suap/scripts/consolidar_pdfs.py --periodo <P>
+python3 <PLUGIN_DIR>/skills/preencher-rit-suap/scripts/consolidar_pdfs.py --periodo <P>
 ```
 
 Gera `<pasta_dados>/periodos/<P>/rit/_consolidados/<secao>.pdf`. Seções sem PDF (preparacao_ensino, projetos_ensino, reunioes, extensao) são puladas silenciosamente.

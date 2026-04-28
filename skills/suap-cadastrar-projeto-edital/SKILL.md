@@ -1,6 +1,7 @@
 ---
 name: suap-cadastrar-projeto-edital
 description: Automatiza, com revisão humana obrigatória, o cadastro de projetos de pesquisa/inovação no SUAP do IFRN a partir de um PDF de Plano de Trabalho e do número do edital. Cobre descoberta do formulário, geração de MDs de revisão campo-a-campo, preenchimento via Playwright e parada em "Salvar rascunho" (nunca submete). Use esta skill sempre que o usuário mencionar "cadastrar projeto SUAP", "adicionar projeto pesquisa IFRN", "edital NN/YYYY da PROPI", "submeter projeto edital", "projeto no SUAP", ou disser "tenho o PDF do Plano de Trabalho, quero cadastrar" — mesmo que não cite a skill pelo nome.
+allowed-tools: Read, Write, Edit, Bash, Glob, Grep
 ---
 
 # Cadastro de projeto no SUAP (edital de pesquisa IFRN)
@@ -38,7 +39,7 @@ fora do escopo desta skill.
 
 ## Parâmetros esperados
 
-Ao ser invocada, a skill deve receber (pergunte se faltar):
+Ao ser invocada, a skill deve receber (usar `AskUserQuestion` para qualquer parâmetro ausente):
 
 | Parâmetro | Obrigatório | Exemplo |
 |-----------|-------------|---------|
