@@ -50,11 +50,12 @@ Exemplo de pergunta mínima:
 ## Setup do plugin
 
 ```bash
-# Instalar dependências Python
-uv pip install -r requirements.txt
+# Instalar dependências (script idempotente — recomendado)
+bash scripts/bootstrap_deps.sh
 
-# Instalar browser Playwright
-uv run playwright install chromium
+# Ou, equivalente manual:
+#   uv pip install -r requirements.txt
+#   uv run playwright install chromium
 
 # Configurar credenciais SUAP no keyring do SO (rodar uma vez por máquina)
 uv run python -m scripts.auth.setup_credentials
@@ -68,7 +69,26 @@ uv run python -m scripts.auth.setup_credentials
 |-------|-------------|
 | `preencher-rit-suap` | Preencher o formulário RIT no SUAP via Playwright (9 seções + PDFs) |
 | `suap-cadastrar-projeto-edital` | Cadastrar projeto de pesquisa num edital PROPI aberto |
-| `suap-completar-projeto-equipe-metas` | Completar aba Equipe e Objetivos de projeto já cadastrado |
+| `suap-completar-projeto-equipe-metas` | Completar aba Equipe e Objetivos específicos de projeto já cadastrado |
+
+---
+
+## Pipeline de preparação de documentos (PIT/RIT)
+
+Os checklists em `CHECKLISTS/` seguem esta numeração de fases:
+
+| Fase | Nome | Checklist |
+|------|------|-----------|
+| 1 | Levantamento de obrigações | (manual) |
+| 2 | Geração da lista de entregas | (manual) |
+| 3 | Coleta de documentos | `CHECKLISTS/coleta.md` |
+| 4 | Validação dos documentos coletados | `CHECKLISTS/validacao.md` |
+| 5 | Preenchimento no SUAP (projeto de pesquisa) | `suap-cadastrar-projeto-edital` + `suap-completar-projeto-equipe-metas` |
+| 6 | Redação do relatório | (manual / skill futura) |
+| 7 | Revisão do rascunho | `CHECKLISTS/revisao_rit.md` · `CHECKLISTS/revisao_pit.md` |
+| 8 | Submissão assistida | `CHECKLISTS/submissao.md` + `preencher-rit-suap` |
+
+> Este plugin cobre automaticamente as Fases 5 e 8 (parcialmente). As demais são manuais.
 
 ---
 

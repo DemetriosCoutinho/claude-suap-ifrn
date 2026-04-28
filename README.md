@@ -132,7 +132,8 @@ O plugin não exige esta estrutura, mas as skills foram pensadas com ela em ment
 ├── periodos/
 │   └── 2025.1/
 │       └── rit/
-│           ├── manifesto.json          # { "periodo": "2025.1", "ch_total": 40, ... }
+│           ├── _meta/
+│           │   └── manifesto.json      # { "periodo": "2025.1", "ch_total": 40, ... }
 │           ├── _redacao/
 │           │   ├── 01_ensino.md
 │           │   ├── 02_pesquisa.md
@@ -170,7 +171,7 @@ scripts/
 │   └── setup_credentials.py  # wizard de configuração inicial
 ├── suap/
 │   ├── .auth/
-│   │   └── storage_state.json   # sessão autenticada do Playwright (gitignored)
+│   │   └── storage_state.json   # sessão autenticada do Playwright (criado no 1º login; gitignored)
 │   └── .discovery/
 │       └── rit_form_schema.json # schema do formulário RIT
 ├── pdf/                      # utilitários de leitura de PDF
