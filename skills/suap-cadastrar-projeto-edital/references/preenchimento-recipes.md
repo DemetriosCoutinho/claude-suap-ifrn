@@ -27,12 +27,12 @@ function setNative(el, value) {
 
 // Exemplo: preencher título
 const titulo = document.querySelector('[name="titulo"]');
-setNative(titulo, 'Continuação E Aprimoramento Da Plataforma Lesion Mapping Assistant');
+setNative(titulo, '<titulo-do-projeto>');
 ```
 
 Aplicável a:
 - `titulo` (text, max 255)
-- `valor_global_projeto` (text formatado como "0,0" ou "640247,40")
+- `valor_global_projeto` (text formatado como "0,0" ou "100000,00")
 - `inicio_execucao`, `fim_execucao` (date: "YYYY-MM-DD")
 - `palavras_chaves` (text, max 255)
 - `area_conhecimento` (select com `value="12"` para Ciência da Computação)

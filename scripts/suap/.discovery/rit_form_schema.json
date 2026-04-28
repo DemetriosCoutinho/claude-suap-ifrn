@@ -1,5 +1,6 @@
 {
-  "form_url_base": "https://suap.ifrn.edu.br/pit_rit_v2/preencher_relatorio_individual_trabalho/23602/",
+  "form_url_base": "https://suap.ifrn.edu.br/pit_rit_v2/preencher_relatorio_individual_trabalho/<id-do-rit>/",
+  "_nota_id_do_rit": "O <id-do-rit> é o identificador numérico do seu RIT no SUAP. Para descobrir: acesse /pit_rit_v2/, clique no RIT do período desejado e leia o número na URL. Cada professor tem um ID diferente por período.",
   "listing_url": "/pit_rit_v2/",
   "salvar_button": {
     "text": "Salvar",

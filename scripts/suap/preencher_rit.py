@@ -9,7 +9,7 @@ Requer:
 Uso:
     # Com URL explícita:
     python -m scripts.suap.preencher_rit --periodo 2025.2 \\
-        --url https://suap.ifrn.edu.br/pit_rit_v2/preencher_relatorio_individual_trabalho/23602/
+        --url https://suap.ifrn.edu.br/pit_rit_v2/preencher_relatorio_individual_trabalho/<id-do-rit>/
 
     # Sem URL (descobre via listing_url do schema):
     python -m scripts.suap.preencher_rit --periodo 2025.2

@@ -8,7 +8,7 @@ uma iteração futura.
 
 ## Ponto de entrada
 
-URL do projeto salvo na Rodada 1: `https://suap.ifrn.edu.br/pesquisa/projeto/9139/`
+URL do projeto salvo na Rodada 1: `https://suap.ifrn.edu.br/pesquisa/projeto/<id-do-projeto>/`
 (edital 02/2026). Ao abrir essa URL em modo de edição, o SUAP exibe:
 
 - Abas: Detalhes, Equipe, Metas, Anexos, Plano de Aplicação, Histórico.

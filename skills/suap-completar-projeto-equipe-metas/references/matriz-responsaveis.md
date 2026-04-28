@@ -28,34 +28,28 @@ Coordenador → Líder Técnico → Especialista da área → primeiro correspon
 
 O gerador de payload registra a substituição como `responsavel_original` vs. `responsavel_aplicado` no report final, para o usuário saber o que mudou.
 
-## Aplicação ao projeto #9139
+## Exemplo de aplicação (projeto genérico)
 
-Derivado de §11 do PDF:
+Derivado de §11 do PDF do usuário:
 
 | Pessoa | Papel no plano | Potencial responsabilidade |
 |--------|----------------|------------------------------|
-| <Coordenador> (coordenador, servidor IFRN) | Coordenação | Metas 1, 2, 3 (gestão/doc) |
-| Diego (servidor IFRN) | Líder Técnico | Metas 4, 5, 6 (técnicas) |
-| Thiago (servidor IFRN) | Especialista Moodle | Meta 7 |
-| Allan (servidor UFRN — **excluído por filtro**) | Especialista IA | — (não entra na Equipe SUAP) |
-| Misael, Leão (servidores IFRN) | Back-end Sr. | Corresponsáveis metas 5, 6 |
-| Erasmo (servidor IFRN) | Assistente Administrativo | Corresponsável metas 1, 3 |
-| Adriyan (aluno IFRN) | Mobile Jr. | Corresponsável meta 4, 6 |
-| Valeria (aluna IFRN) | Web Jr. | Corresponsável meta 4, 6 |
-| Maria Alessandra (aluna IFRN) | Front-End Moodle | Corresponsável meta 7 |
-| Maria Heloísa (aluna IFRN) | Dev Moodle | Corresponsável meta 7 |
-| Caio (aluno IFRN) | Dev software | Corresponsável meta 6 |
+| `<coordenador-1>` (coordenador, servidor IFRN) | Coordenação | Metas de gestão/documentação |
+| `<servidor-1>` (servidor IFRN) | Líder Técnico | Metas técnicas principais |
+| `<servidor-2>` (servidor IFRN) | Especialista na área | Metas da especialidade |
+| `<servidor-externo>` (servidor outra instituição — **excluído por filtro**) | Colaborador | — (não entra na Equipe SUAP) |
+| `<aluno-1>` (aluno IFRN) | Desenvolvimento | Corresponsável em metas técnicas |
+| `<aluno-2>` (aluna IFRN) | Desenvolvimento | Corresponsável em metas técnicas |
 
-**Nota sobre Allan**: ele é `Especialista em IA` mas UFRN. Como o filtro IFRN exclui-o da aba Equipe, a meta 4 (que seria ideal para ele) passa a ter Diego como responsável principal. Consequência: o projeto perde o atributo "atividade com especialista IA" no SUAP. Se isso for problema, reconsiderar o filtro ou cadastrar Allan manualmente como colaborador externo.
+**Nota sobre membros de outras instituições**: servidores de fora do IFRN são excluídos pelo filtro da aba Equipe. Se isso for problema, reconsiderar o filtro ou cadastrar como colaborador externo manualmente.
 
 ## Formato no MD de meta
 
 ```yaml
-responsavel_principal: "Diego Vinicius Cirilo do Nascimento"
+responsavel_principal: "<nome-completo-do-responsavel>"
 corresponsaveis:
-  - "Adriyan Eryk de Oliveira Leite"
-  - "Misael Barreto de Queiroz"
-  - "Valeria Vitória de Queiroz Fraire"
+  - "<nome-completo-corresponsavel-1>"
+  - "<nome-completo-corresponsavel-2>"
 ```
 
 O gerador de payload resolve cada nome para o ID do Select2 no dropdown de responsável (encontrado via busca por nome parcial no mapa da aba Objetivos). Se não resolver:

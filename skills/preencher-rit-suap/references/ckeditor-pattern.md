@@ -80,31 +80,31 @@ O texto em `.textos_prontos.json` é markdown simples. Converter antes de chamar
 **Entrada** (markdown de `.textos_prontos.json`):
 
 ```
-Durante o semestre letivo de 2025.2, o professor participou ativamente de diversas ações de pesquisa.
+Durante o semestre letivo de <ano-semestre>, o professor participou ativamente de diversas ações de pesquisa.
 
 **Atividades realizadas:**
 
-- Coordenação do projeto "LAMA" (Edital 02/2025), período de 14 de julho a 04 de novembro de 2025;
-- Membro do projeto "HAPI" (Edital 01/2025), a partir de 29 de agosto de 2025;
-- Orientação de três alunos de IC:
-  - Valéria Vitória (bolsista);
-  - Adryan Eryk (bolsista);
-  - Francisco Leocássio (voluntário).
+- Coordenação do projeto "<projeto-1>" (Edital <nn-aaaa>), período de <dd-mm-aaaa> a <dd-mm-aaaa>;
+- Membro do projeto "<projeto-2>" (Edital <nn-aaaa>), a partir de <dd-mm-aaaa>;
+- Orientação de N alunos de IC:
+  - <aluno-1> (bolsista);
+  - <aluno-2> (bolsista);
+  - <aluno-3> (voluntário).
 ```
 
 **Saída** (HTML para `setData`):
 
 ```html
-<p>Durante o semestre letivo de 2025.2, o professor participou ativamente de diversas ações de pesquisa.</p>
+<p>Durante o semestre letivo de <ano-semestre>, o professor participou ativamente de diversas ações de pesquisa.</p>
 <p><strong>Atividades realizadas:</strong></p>
 <ul>
-<li>Coordenação do projeto "LAMA" (Edital 02/2025), período de 14 de julho a 04 de novembro de 2025;</li>
-<li>Membro do projeto "HAPI" (Edital 01/2025), a partir de 29 de agosto de 2025;</li>
-<li>Orientação de três alunos de IC:
+<li>Coordenação do projeto "<projeto-1>" (Edital <nn-aaaa>), período de <dd-mm-aaaa> a <dd-mm-aaaa>;</li>
+<li>Membro do projeto "<projeto-2>" (Edital <nn-aaaa>), a partir de <dd-mm-aaaa>;</li>
+<li>Orientação de N alunos de IC:
   <ul>
-  <li>Valéria Vitória (bolsista);</li>
-  <li>Adryan Eryk (bolsista);</li>
-  <li>Francisco Leocássio (voluntário).</li>
+  <li><aluno-1> (bolsista);</li>
+  <li><aluno-2> (bolsista);</li>
+  <li><aluno-3> (voluntário).</li>
   </ul>
 </li>
 </ul>

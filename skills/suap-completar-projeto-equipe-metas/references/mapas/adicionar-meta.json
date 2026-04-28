@@ -1,7 +1,7 @@
 {
-  "url": "https://suap.ifrn.edu.br/pesquisa/adicionar_meta/9139/",
+  "url": "https://suap.ifrn.edu.br/pesquisa/adicionar_meta/<id-do-projeto>/",
   "formId": "meta_form",
-  "formAction": "https://suap.ifrn.edu.br/pesquisa/adicionar_meta/9139/",
+  "formAction": "https://suap.ifrn.edu.br/pesquisa/adicionar_meta/<id-do-projeto>/",
   "fields": [
     {
       "name": "csrfmiddlewaretoken",
@@ -9,7 +9,7 @@
       "type": "hidden",
       "tag": "input",
       "options": null,
-      "value": "8yxm9wGe5j5sfEVmkII5vMdsqISzNksPMDmYtam9QtdONtcXKrY8XgFNemKQTLIf"
+      "value": "<csrf-token>"
     },
     {
       "name": "ordem",

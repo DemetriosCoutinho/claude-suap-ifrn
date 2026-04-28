@@ -4,7 +4,7 @@ Adaptação do `descobrir-formulario.md` da skill-pai, agora para o projeto já 
 
 ## Contexto
 
-Ao abrir `https://suap.ifrn.edu.br/pesquisa/projeto/9139/` (modo edição), o SUAP expõe abas para Detalhes, Equipe, Metas/Objetivos, Anexos, Plano de Aplicação, Histórico. Cada aba pode ser: (a) inline formset Django na mesma página, (b) página separada com POST próprio, (c) modal JS com endpoint AJAX. A Fase 1 descobre qual.
+Ao abrir `https://suap.ifrn.edu.br/pesquisa/projeto/<id-do-projeto>/` (modo edição), o SUAP expõe abas para Detalhes, Equipe, Metas/Objetivos, Anexos, Plano de Aplicação, Histórico. Cada aba pode ser: (a) inline formset Django na mesma página, (b) página separada com POST próprio, (c) modal JS com endpoint AJAX. A Fase 1 descobre qual.
 
 ## Script JS de mapeamento
 

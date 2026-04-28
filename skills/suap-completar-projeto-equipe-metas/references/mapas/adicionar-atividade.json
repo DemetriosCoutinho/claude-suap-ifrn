@@ -1,7 +1,8 @@
 {
-  "url": "https://suap.ifrn.edu.br/pesquisa/adicionar_etapa/41878/",
+  "url": "https://suap.ifrn.edu.br/pesquisa/adicionar_etapa/<id-do-projeto>/",
   "formId": "etapa_form",
-  "formAction": "https://suap.ifrn.edu.br/pesquisa/adicionar_etapa/41878/",
+  "formAction": "https://suap.ifrn.edu.br/pesquisa/adicionar_etapa/<id-do-projeto>/",
+  "_nota_id_do_projeto": "O <id-do-projeto> é o identificador numérico do projeto no SUAP. Leia da URL ao abrir o projeto em /pesquisa/. Cada projeto tem um ID diferente.",
   "fields": [
     {
       "name": "csrfmiddlewaretoken",
@@ -9,7 +10,7 @@
       "type": "hidden",
       "tag": "input",
       "options": null,
-      "value": "37g5BLjbl3gVpEKLNc30YBecrN6oSxadHc5HVpZ66dohXt1mdVj3q5GxfrYFYYqD",
+      "value": "<csrf-token>",
       "multiple": false
     },
     {
@@ -46,38 +47,23 @@
       "type": "select-one",
       "tag": "select",
       "label": "Responsável:",
+      "_nota": "Opções carregadas dinamicamente pelo SUAP com os membros da equipe do projeto. IDs e nomes variam por projeto.",
       "options": [
         {
           "value": "",
           "text": "---------"
         },
         {
-          "value": "38165",
-          "text": "<nome_coordenador>"
+          "value": "<id-membro-1>",
+          "text": "<membro-1>"
         },
         {
-          "value": "38190",
-          "text": "Valéria Vitória de Queiroz Freire"
+          "value": "<id-membro-2>",
+          "text": "<membro-2>"
         },
         {
-          "value": "38185",
-          "text": "Diego Vinicius Cirilo do Nascimento"
-        },
-        {
-          "value": "38186",
-          "text": "Leo Moreira Silva"
-        },
-        {
-          "value": "38187",
-          "text": "Erasmo Jose Pereira de Oliveira"
-        },
-        {
-          "value": "38188",
-          "text": "Thiago Henrique Freire de Oliveira"
-        },
-        {
-          "value": "38189",
-          "text": "ADRYAN ERYK DE OLIVEIRA LEITE"
+          "value": "<id-membro-3>",
+          "text": "<membro-3>"
         }
       ],
       "value": "",
@@ -88,9 +74,10 @@
       "id": "id_integrantes_0",
       "type": "checkbox",
       "tag": "input",
-      "label": "Integrantes da Atividade:",
+      "label": "<membro-1>",
+      "_nota": "Um checkbox por membro da equipe. A skill deve marcar os integrantes relevantes para a atividade.",
       "options": null,
-      "value": "38165",
+      "value": "<id-membro-1>",
       "multiple": false
     },
     {
@@ -98,9 +85,9 @@
       "id": "id_integrantes_1",
       "type": "checkbox",
       "tag": "input",
-      "label": "Valéria Vitória de Queiroz Freire",
+      "label": "<membro-2>",
       "options": null,
-      "value": "38190",
+      "value": "<id-membro-2>",
       "multiple": false
     },
     {
@@ -108,49 +95,9 @@
       "id": "id_integrantes_2",
       "type": "checkbox",
       "tag": "input",
-      "label": "Diego Vinicius Cirilo do Nascimento",
+      "label": "<membro-3>",
       "options": null,
-      "value": "38185",
-      "multiple": false
-    },
-    {
-      "name": "integrantes",
-      "id": "id_integrantes_3",
-      "type": "checkbox",
-      "tag": "input",
-      "label": "Leo Moreira Silva",
-      "options": null,
-      "value": "38186",
-      "multiple": false
-    },
-    {
-      "name": "integrantes",
-      "id": "id_integrantes_4",
-      "type": "checkbox",
-      "tag": "input",
-      "label": "Erasmo Jose Pereira de Oliveira",
-      "options": null,
-      "value": "38187",
-      "multiple": false
-    },
-    {
-      "name": "integrantes",
-      "id": "id_integrantes_5",
-      "type": "checkbox",
-      "tag": "input",
-      "label": "Thiago Henrique Freire de Oliveira",
-      "options": null,
-      "value": "38188",
-      "multiple": false
-    },
-    {
-      "name": "integrantes",
-      "id": "id_integrantes_6",
-      "type": "checkbox",
-      "tag": "input",
-      "label": "ADRYAN ERYK DE OLIVEIRA LEITE",
-      "options": null,
-      "value": "38189",
+      "value": "<id-membro-3>",
       "multiple": false
     },
     {

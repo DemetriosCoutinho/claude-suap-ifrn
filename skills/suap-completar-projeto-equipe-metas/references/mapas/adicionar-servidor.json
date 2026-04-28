@@ -1,7 +1,7 @@
 {
-  "url": "https://suap.ifrn.edu.br/pesquisa/adicionar_participante_servidor/9139/",
+  "url": "https://suap.ifrn.edu.br/pesquisa/adicionar_participante_servidor/<id-do-projeto>/",
   "formId": "participacaoservidor_form",
-  "formAction": "https://suap.ifrn.edu.br/pesquisa/adicionar_participante_servidor/9139/",
+  "formAction": "https://suap.ifrn.edu.br/pesquisa/adicionar_participante_servidor/<id-do-projeto>/",
   "fields": [
     {
       "name": "csrfmiddlewaretoken",
@@ -9,7 +9,7 @@
       "type": "hidden",
       "tag": "input",
       "options": null,
-      "value": "LLoGcK4dGER6vmRjrLWFhZNi2C0cauVMpQdiwoK8rOZs3b8URucIJtfDQgStgVbc"
+      "value": "<csrf-token>"
     },
     {
       "name": "vinculo",
@@ -44,7 +44,8 @@
     },
     {
       "name": "servidor",
-      "id": "servidor_zYk34LhDMR",
+      "id": "servidor_<widget-id>",
+      "_nota": "O sufixo do id do campo servidor é gerado dinamicamente pelo SUAP; use querySelector('[name=\"servidor\"]') para localizar.",
       "type": "select-one",
       "tag": "select",
       "options": [],

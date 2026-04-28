@@ -6,7 +6,7 @@ rit_form_schema.json é usado por preencher_rit.py indefinidamente.
 
 Uso:
     python -m scripts.suap.discover_rit_form \\
-        --url https://suap.ifrn.edu.br/pit_rit_v2/preencher_relatorio_individual_trabalho/23602/
+        --url https://suap.ifrn.edu.br/pit_rit_v2/preencher_relatorio_individual_trabalho/<id-do-rit>/
 
 O script:
 1. Abre o navegador em modo headful (visível).
@@ -157,7 +157,7 @@ def detect_save_button(page) -> dict | None:
 
 def detect_listing_url(form_url: str) -> str:
     """Deriva a URL de listagem a partir da URL do formulário."""
-    # Ex.: /pit_rit_v2/preencher_relatorio_individual_trabalho/23602/ → /pit_rit_v2/
+    # Ex.: /pit_rit_v2/preencher_relatorio_individual_trabalho/<id-do-rit>/ → /pit_rit_v2/
     parts = form_url.rstrip("/").split("/")
     # Remove ID numérico final e ação
     while parts and (parts[-1].isdigit() or not parts[-1]):
@@ -174,7 +174,7 @@ def main() -> None:
     parser.add_argument(
         "--url",
         required=True,
-        help="URL completa do formulário RIT (ex.: https://suap.ifrn.edu.br/pit_rit_v2/preencher_relatorio_individual_trabalho/23602/)",
+        help="URL completa do formulário RIT (ex.: https://suap.ifrn.edu.br/pit_rit_v2/preencher_relatorio_individual_trabalho/<id-do-rit>/)",
     )
     parser.add_argument(
         "--headless",
