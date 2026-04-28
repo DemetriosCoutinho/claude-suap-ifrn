@@ -38,13 +38,13 @@ Cada eixo corresponde a um bloco temático de atividades que o professor deve co
 Atividades de sala de aula e pedagógicas: disciplinas ministradas, planos de ensino, participação em PPC (Projeto Pedagógico de Curso), NDE.
 
 **Pesquisa**
-Projetos de pesquisa, iniciação científica (IC), bancas de IC, participação em grupos de pesquisa. `[confirmar: FINECAP e HAPI são projetos de pesquisa do usuário?]`
+Projetos de pesquisa, iniciação científica (IC), bancas de IC, participação em grupos de pesquisa. 
 
 **Gestão**
-Participação em colegiados, comissões, PAF, administração de cursos. `[confirmar: PAF é Plano de Atividades do Formando ou outro?]`
+Participação em colegiados, comissões, PAF, administração de cursos.
 
 **Orientações**
-Orientação de TCC, estágio supervisionado, bancas de TCC/IC como avaliador. `[confirmar: orientações de IC entram em pesquisa ou orientações?]`
+Orientação de TCC, estágio supervisionado, bancas de TCC/IC como avaliador. 
 
 ---
 
@@ -77,15 +77,6 @@ Aparece em RIT2024.1 e RIT2024.2. Necessita confirmação.
 **CODIPA** `[confirmar: sigla e papel nos comprovantes — coordenadoria? projeto?]`
 Aparece em RIT2021.1. Necessita confirmação.
 
-**HAPI** `[confirmar: nome completo — projeto de pesquisa?]`
-Aparece mencionado no comprovante `membro_hapi.pdf` em RIT2025.1.
-
-**LAMA** `[confirmar: nome completo e vínculo — projeto do usuário?]`
-Aparece em `coordenador_lama.pdf` e `orientacao_lama.pdf` em RIT2025.1.
-
-**APRIMORAMENTO** `[confirmar: nome completo — projeto?]`
-Aparece em `membro_aprimoramento.pdf` em RIT2025.1.
-
 ---
 
 ## Papéis e instâncias
@@ -97,7 +88,7 @@ Instância colegiada de um curso, responsável pela concepção, atualização e
 Órgão deliberativo do curso. Participação nas reuniões gera atas que comprovam atividade de gestão.
 
 **Coordenação**
-Coordenação do curso ao qual o professor está vinculado. `[confirmar: qual o curso/coordenação do usuário?]`
+Coordenação do curso ao qual o professor está vinculado. 
 
 ---
 
